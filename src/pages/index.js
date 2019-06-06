@@ -1,7 +1,6 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import IssueImage from "../components/issueImage"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -25,16 +24,6 @@ const IndexPage = () => (
       If you want to know a little more about the current state of what we are
       trying to solve, here's a diagram:
     </p>
-    <div
-      style={{
-        maxWidth: `600px`,
-        marginBottom: `1.45rem`,
-        marginLeft: `auto`,
-        marginRight: `auto`,
-      }}
-    >
-      <IssueImage />
-    </div>
     <p>
       If you want to help, please visit the{" "}
       <a href="https://github.com/coreofscience">
