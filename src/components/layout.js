@@ -35,10 +35,18 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()} Core of Science, Built with
+          <footer
+            style={{
+              marginTop: `3rem`,
+            }}
+          >
+            © {new Date().getFullYear()} Core of Science{" "}
+            <a href="https://coreofscience.com">coreofscience.com</a>, Built
+            with
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <a href="https://www.gatsbyjs.org" target="blank">
+              Gatsby
+            </a>
           </footer>
         </div>
       </>
