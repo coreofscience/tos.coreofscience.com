@@ -17,7 +17,7 @@ before_script:
   # if you're have troubles with firebase/firebase-tools#382
   # - "yarn globar add https://github.com/firebase/firebase-tools"
   - "yarn global add firebase-tools"
-  - "harn global add gatsby"
+  - "yarn global add gatsby"
 script:
   - "yarn test"
   - "yarn build:prod"
