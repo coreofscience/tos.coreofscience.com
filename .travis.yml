@@ -1,25 +1,25 @@
 language: node_js
 node_js:
-  - "8"
-cache: yarn
+- '8'
 addons:
   apt:
     packages:
-      - g++-4.8
+    - g++-4.8
     sources:
-      - ubuntu-toolchain-r-test
+    - ubuntu-toolchain-r-test
 env:
-  CXX=g++-4.8
+  matrix:
+  - CXX=g++-4.8
+  global:
+    secure: QJ5czZoFszCWOfwstL/V51u2ZPQuiBCWGRdoW2VErr+mu6san7D1ED9jAurQwkjiwSdWTl1Pc8m6ym4RxySgJz6W40eiPuzL+iiOeCRKsAgrCL7aTWkDKgrXWH4zKjDIWhihbRchA4xzeEYYc2esNWaoG7GW3ldSO1bVyp7RD/9pr3oZsg+FZYF+wt/FFeVh3XUKjS1fbfGnhNanQqcg3IYjzm2kXXlxl/ZU5S8gIFBR0d+ENOH6m+dlCOpJqv/HtOj6ayAAFa1gV8tYkDmbCqZEJJU5ln7+GgHzDiX2IZrLxOhYAtsg4uVsUWLxWMusbkGctCMyK2/XbYAEvtY7B01Cn5jfW91EXfDNDdcQlxMz0D1l+hIgowGFd6mCrqTDHiL2kFQy1cu4GRO6h8brGC064GbjjJNRwTrcrOHVJ1ZcXAVsPzLbQoVjMDaQbMO2AceHBtkUJP7fjX/RzTbjReSIgJJQtMiCCRoTp8OA2CxA9CBiwnYYEV6rM5zyEdGwOywN9YpP2Kk4Uq1P1GZSXU4kFyS33Hd3MC4iNqGCmCOStP4ho4BRLLVNYRGVclJCt+08xsWoUIvQrhd7Gb1/15b+6Nu31W2pXDdPLF7C/XffNWEnOJANzkX24FIxK0/OEjrnh57wu1p/Ve4f3TifU3oan/ddcx6zKlSWYZ1pgAo=
 branches:
   only:
-    - master
+  - master
 before_script:
-  # if you're have troubles with firebase/firebase-tools#382
-  # - "yarn globar add https://github.com/firebase/firebase-tools"
-  - npm install -g firebase-tools
-  - npm install -g gatsby-cli
+- npm install -g firebase-tools
+- npm install -g gatsby-cli
 script:
-  - npm run-script test
-  - npm run-script build
+- npm run-script test
+- npm run-script build
 after_success:
-  - "firebase deploy --token=${FIREBASE_TOKEN}"
+- firebase deploy --token=${FIREBASE_TOKEN}
