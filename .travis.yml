@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - "8"
+cache: yarn
+addons:
+  apt:
+    packages:
+      - g++-4.8
+    sources:
+      - ubuntu-toolchain-r-test
+env:
+  CXX=g++-4.8
+branches:
+  only:
+    - master
+before_script:
+  # if you're have troubles with firebase/firebase-tools#382
+  # - "yarn globar add https://github.com/firebase/firebase-tools"
+  - "yarn global add firebase-tools"
+  - "harn global add gatsby"
+script:
+  - "yarn test"
+  - "yarn build:prod"
+after_success:
+  - "firebase deploy --token=${FIREBASE_TOKEN}"
