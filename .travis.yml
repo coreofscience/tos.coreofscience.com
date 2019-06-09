@@ -19,7 +19,7 @@ before_script:
   - npm install -g firebase-tools
   - npm install -g gatsby-cli
 script:
-  - npm test
-  - npm build
+  - npm run-script test
+  - npm run-script build
 after_success:
   - "firebase deploy --token=${FIREBASE_TOKEN}"
