@@ -32,8 +32,7 @@
     "serve": "gatsby serve",
     "test": "echo \"Warning: no test specified\" && exit 0",
     "build": "gatsby build",
-    "build:prod": "yarn build -- --prefix-links",
-    "deploy": "yarn build:prod && firebase deploy"
+    "deploy": "npm build && firebase deploy"
   },
   "repository": {
     "type": "git",
