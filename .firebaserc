@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "tos-manizales"
+    "default": "tos-manizales",
+    "staging": "tos-manizales"
   }
 }
