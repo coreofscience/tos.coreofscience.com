@@ -27,12 +27,13 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Warning: no test specified\" && exit 0",
+    "build": "gatsby build",
+    "deploy": "npm run-script build && firebase deploy"
   },
   "repository": {
     "type": "git",
