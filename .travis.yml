@@ -9,7 +9,7 @@ script:
 deploy:
   - provider: firebase
     token:
-      secure: "JUAN FILL THIS UP WITH firebase login:ci AND travis encrypt"
+      secure: "1/Bej8rA-s4Y0vMv10k5UJo1PPDYIDt1QAJovAMjKBaX0"
     message: "Staging deploy from travis."
     project: tos-manizales
     skip_cleanup: true
