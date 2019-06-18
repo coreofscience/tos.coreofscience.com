@@ -9,6 +9,15 @@ script:
 deploy:
   - provider: firebase
     token:
+      secure: "JUAN FILL THIS UP WITH firebase login:ci AND travis encrypt"
+    message: "Staging deploy from travis."
+    project: tos-manizales
+    skip_cleanup: true
+    on:
+      branch: master
+      repo: coreofscience/tos.coreofscience.com
+  - provider: firebase
+    token:
       secure: "T9s3tvbIXDJ3aDth1Zt91JibuezdHCSNDL+6SK718mrfOomtQUK2kMNuh61u8/Q/pcfV2XpI8UukbD0azpXAXuhSUG1y+Dr0UrMjFSrbCdL0bET0hYFB+GlXKZPUc+3XZ6p+E3iEagYaNEzk5R50KVoBJ0qP3czJldFLWK4hi8WMMCnnvnFFcML50RnlGPMI5IHPthftORtHYXDDDAlOAUABy2dPL7WaO1kHGaMISnNjI5EAlLPQLyeTlLCbFG01wjQQCPX/ZqBuspSIq2Wh2BINiENuIGS6EcWN7oDM57T5oD9r8NalV9iNY/z/G1ueWnjBia3MV2qldyIL9SYnba694BAI3pPCJRRVhbzOF4pWy7Jn3Wa7eBHa354bf6o06ZC7M/0w+PPpZmwbfKBde08R0pg+LnEzeOTN1BTGCJKKG5e+K/dYrGEb4RXe5U/707ud5mX6+DudYomIa+WUMS0W/q3Kqg7h2nqmr56PGh1m/SvRVSTXJPqswFVLt61ayrk1Dpq3NIXFSiJ5nwjret2/IpW+sXP0Uzr8AFypWDiicMfjpFAOZJAF27ga3U3Bag7/85diyzPvgeH3K7bbMSNkrTDeNzin1r01p/qsConhvKLcflTrs/VtI4zMLdBF9gjoShI9k3izn7hH31Ct3uwbMhovQEquw55E85ZHmds="
     message: "Production deploy from travis."
     project: tos-coreofscience
