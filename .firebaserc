@@ -1,7 +1,7 @@
 {
   "projects": {
     "default": "tos-manizales",
-    "staging": "tos-manizales"
+    "staging": "tos-manizales",
     "production": "tos-coreofscience"
   }
 }
