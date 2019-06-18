@@ -9,7 +9,7 @@ script:
 deploy:
   - provider: firebase
     token:
-      secure: "JUAN FILL THIS UP WITH firebase login:ci AND travis encrypt"
+      secure: "XWdaWEL4nODbMSpNgLFlIZXSt2ycZ/94u59HkyRynKJFtOBym9QnDssgi9tDAI85nKv4pDw7DLQ3BLolM1kXUpSRchlhZz3gk5ymB93wTgI/d4VF2KTWO3euJEN7DIgMcFPZMyw1EZqNxc8Zyv/d4P5J+XNy1/r4xGdQAY23eAbjR+M33RhwFlOmP8mlHxYd8dVg1WIWxdrduuD2tvpIv7w+KG/6qtYevhdgy5xEtEguUORI8W6B9Y3jglofLTIGxPPTGpJ7JxLqBwdyGTj1lwigay3XquX0Dsxw0bQEpBZMeshDHhRg7IwuNoWaaNDFJSJYPZSIFRZH8A/vwtWUQF2T8+cv1xWzNugqnWJSUn3VUpiFi1EkLF0HY32yAfUxjTr5gMJLMN0P8gQ/Iw7O1qQEB5DCVntHAwwPAEhn5bjCJyC/Mwe8d+g/3hotQABvX6YYWTtoUkV4TMRtLUq/BBFuFhxvhR+dSgMSXlzavepb0XwHkQHIyGXuFuRf1hQBZIboUY8QaJ3itpX7/914XXQTkweZ7Kc2SHZdIZBsigVGUIWqpfXF2S3AGKPVXJvX4FQs5VuwYc9mYdo+TWE5UZ6P8x4AFHOCLP86QQoj3QJ03YdAgXAsrtuX6LMV9/yH93O6nl93GQ2eo3wC6sUT6BnzsJl3bdbWVDC2kGZ05tI="
     message: "Staging deploy from travis."
     project: tos-manizales
     skip_cleanup: true
