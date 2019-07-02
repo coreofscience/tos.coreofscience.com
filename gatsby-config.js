@@ -21,8 +21,8 @@ module.exports = {
         name: `tos.manizales.unal.edu.co`,
         short_name: `tosoffline`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#235F13`,
+        theme_color: `#235F13`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
