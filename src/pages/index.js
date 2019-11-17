@@ -29,6 +29,23 @@ const IndexPage = () => (
       or visit the core of science website:{" "}
       <a href="https://coreofscience.com">coreofscience.com</a>.
     </p>
+    <h2>How did ToS work?</h2>
+    <p>
+      If you want to know how ToS worked, please follow{" "}
+      <a href="https://www.youtube.com/watch?v=9vegZiCEvWY">this video</a>.
+      However, we are working on a new ToS version, with new functionalities and
+      design. Please keep in touch to be among the first to use ToS again.
+    </p>
+    <h2>What could you do meanwhile to use ToS?</h2>
+    We the ToS team, among some students of universities from Manizales, were
+    working on a minimal ToS on{" "}
+    <a href="https://www.r-project.org/">R language</a>. The code is hosted in{" "}
+    <a href="https://github.com/coreofscience/r-tos">this respository</a> and
+    you could follow{" "}
+    <a href="https://www.youtube.com/watch?v=cdrhWCLPypU">this video</a> to run
+    ToS on a <a href="https://rstudio.cloud/">RStudio cloud</a> account. That
+    repository is open source. Feel free to make suggestions and contribute to
+    the code.
   </Layout>
 )
 
